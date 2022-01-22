@@ -1,0 +1,19 @@
+{
+  "name": "reuscomponents",
+  "version": "1.0.0",
+  "description": "## Node install",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jubejuss/node-and-reusheadfooter.git"
+  },
+  "author": "Jube Juss",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jubejuss/node-and-reusheadfooter/issues"
+  },
+  "homepage": "https://github.com/jubejuss/node-and-reusheadfooter#readme"
+}
