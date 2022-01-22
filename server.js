@@ -1,6 +1,7 @@
 let http = require('http');
 let fs = require('fs');
 let path = require('path');
+let port = 3000;
 
 http
   .createServer(function (request, response) {
@@ -53,5 +54,5 @@ http
       }
     });
   })
-  .listen(8125);
-console.log('Server running at http://127.0.0.1:8125/');
+  .listen(port);
+console.log('Server running at http://127.0.0.1:' + port);

@@ -25,6 +25,7 @@ Loome projekti juurkataloogi faili `server.js` ja kirjutame sinna sisse:
 let http = require('http');
 let fs = require('fs');
 let path = require('path');
+let port = 3000;
 
 http
   .createServer(function (request, response) {
@@ -77,8 +78,8 @@ http
       }
     });
   })
-  .listen(8125);
-console.log('Server running at http://127.0.0.1:8125/');
+  .listen(port);
+console.log('Server running at http://127.0.0.1:' + port);
 ```
 
 ### Selgitus:
@@ -86,7 +87,9 @@ console.log('Server running at http://127.0.0.1:8125/');
 [Selgituse kodu](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Node_server_without_framework)
 
 http serveri loomiseks on meil vaja öelda `require('http')`, mis saab muutuja `let http` väärtuseks.  
-`require fs`lubab kasutada failissüsteemi ja `path`radu (või ma ei teagi, kuidas see eesti kelles õige oleks)
+`require fs`lubab kasutada failissüsteemi ja `path`radu (või ma ei teagi, kuidas see eesti kelles õige oleks), ehk aadressiriba saaks jälgida.
+
+`https.createServer` loob serveri.
 
 Avame loodud `package.json`i ning lisame server käivitamise käsu `script`jaotuse alla:
 
@@ -96,4 +99,16 @@ Avame loodud `package.json`i ning lisame server käivitamise käsu `script`jaotu
 },
 ```
 
-Samuti loome
+### Testime
+
+Loome kaks faili `index.html`ja mingi muu html file, nt `kontakt.html`
+
+## taaskasutatavad komponendid
+
+[juhend](https://www.freecodecamp.org/news/reusable-html-components-how-to-reuse-a-header-and-footer-on-a-website/)
+
+Siin kasutame kolme tehnoloogiat:
+
+- [HTML templiidid](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_templates_and_slots)
+- [Javascripti kohandatud elemendid](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements)
+- [Shadow DOM](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_shadow_DOM)
