@@ -101,7 +101,7 @@ Avame loodud `package.json`i ning lisame server käivitamise käsu `script`jaotu
 
 ### Testime
 
-Loome kaks faili `index.html`ja mingi muu html file, nt `kontakt.html`
+Loome kaks faili `index.html`ja mingi muu html file, nt `kontakt.html` ja ava need browseris.
 
 ## taaskasutatavad komponendid
 
